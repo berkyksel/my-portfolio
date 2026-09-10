@@ -4,17 +4,19 @@ import { prisma } from "@/lib/prisma";
 
 export async function sendMessage(formData: FormData) {
     try {
-        // Formdan gelen verileri alıyoruz
-        const name = formData.get("name") as string;
-        const email = formData.get("email") as string;
-        const message = formData.get("message") as string;
+        const name = String(formData.get("name") ?? "").trim();
+        const email = String(formData.get("email") ?? "").trim().toLowerCase();
+        const message = String(formData.get("message") ?? "").trim();
 
         // Basit bir doğrulama
-        if (!name || !email || !message) {
+        if (!name || !email || !message || name.length > 100 || message.length > 5000) {
             return { success: false, error: "Lütfen tüm alanları doldurun." };
         }
 
-        // Prisma ile veritabanına kayıt yapıyoruz
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            return { success: false, error: "Geçerli bir e-posta adresi girin." };
+        }
+
         await prisma.message.create({
             data: {
                 name,

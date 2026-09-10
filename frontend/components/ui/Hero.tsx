@@ -1,18 +1,18 @@
-import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Hero() {
     return (
-        <section className="max-w-7xl mx-auto px-8 py-20 flex flex-col lg:flex-row items-center justify-between gap-16 min-h-[calc(100vh-100px)]">
+        <section id="home" className="max-w-7xl mx-auto px-8 py-20 flex flex-col lg:flex-row items-center justify-between gap-16 min-h-[calc(100vh-100px)]">
 
             {/* Left Section */}
             <div className="flex-1 space-y-8">
                 <p className="text-blue-500 font-mono text-sm md:text-base">
-                    Hi, my name is
+                    Hi, my name is Berk Yüksel
                 </p>
 
                 <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tight leading-tight">
                     <span className="text-purple-500">
-                        Full Stack <br />
+                        Frontend <br />
                         Developer
                     </span>
                 </h1>
@@ -24,26 +24,29 @@ export default function Hero() {
 
                 {/* Buttons */}
                 <div className="flex flex-wrap gap-4 pt-2">
-                    <Button className="bg-indigo-500 hover:bg-indigo-600 text-white px-8 py-6 rounded-md text-md">
+                    <Link
+                        href="#projects"
+                        className="inline-flex items-center justify-center bg-indigo-500 hover:bg-indigo-600 text-white px-8 py-3 rounded-md text-md transition-colors"
+                    >
                         View My Work
-                    </Button>
+                    </Link>
 
-                    <Button
-                        variant="outline"
+                    <Link
+                        href="#contact"
                         className="text-slate-300 border-slate-700 hover:bg-slate-800 px-8 py-6 rounded-md text-md bg-transparent"
                     >
                         Contact Me
-                    </Button>
+                    </Link>
                 </div>
 
                 {/* Technologies */}
                 <div className="flex flex-wrap gap-3 pt-8">
                     {[
+                        "React",
                         "Next.js",
                         "TypeScript",
                         "Tailwind CSS",
-                        "Prisma",
-                        "PostgreSQL",
+
                     ].map((tech) => (
                         <span
                             key={tech}
@@ -74,20 +77,20 @@ export default function Hero() {
 
                         <div className="ml-4 text-slate-300">
                             name:{" "}
-                            <span className="text-green-400">'Full Stack Dev'</span>,
+                            <span className="text-green-400">&apos;Frontend Dev&apos;</span>,
                         </div>
 
                         <div className="ml-4 text-slate-300">
                             skills: [
-                            <span className="text-green-400">'Next.js'</span>,{" "}
-                            <span className="text-green-400">'TypeScript'</span>,{" "}
-                            <span className="text-green-400">'AI'</span>
+                            <span className="text-green-400">&apos;React&apos;</span>,{" "}
+                            <span className="text-green-400">&apos;Next.js&apos;</span>,{" "}
+                            <span className="text-green-400">&apos;TypeScript&apos;</span>
                             ],
                         </div>
 
                         <div className="ml-4 text-slate-300">
                             status:{" "}
-                            <span className="text-green-400">'Building amazing apps'</span>,
+                            <span className="text-green-400">&apos;Building modern web applications&apos;</span>
                         </div>
 
                         <div className="text-purple-400">{"}"}</div>

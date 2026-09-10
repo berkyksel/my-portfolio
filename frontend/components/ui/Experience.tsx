@@ -25,12 +25,10 @@ export default function Experience() {
 
     return (
         <section id="experience" className="max-w-7xl mx-auto px-8 py-24 min-h-screen flex flex-col justify-center">
-            <div className="flex items-center gap-4 mb-12">
+            <div className="flex justify-center items-center gap-4 mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
-                    <span className="text-blue-500 font-mono text-2xl md:text-3xl mr-2">03.</span>
-                    Deneyim
+                    Experience
                 </h2>
-                <div className="h-[1px] bg-slate-800 flex-grow"></div>
             </div>
 
             <div className="space-y-12 max-w-4xl">

@@ -1,31 +1,29 @@
 export default function Skills() {
     const skillCategories = [
         {
-            title: "Web Geliştirme",
+            title: "Frontend Development",
             skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui"]
         },
         {
-            title: "Backend & Veritabanı",
+            title: "Backend & Databases",
             skills: ["Node.js", "PostgreSQL", "Prisma ORM", "Python", "REST APIs"]
         },
         {
-            title: "Mobil & Oyun Geliştirme",
+            title: "Mobile & Game Development",
             skills: ["Flutter", "Dart", "C#", "Unity Engine"]
         },
         {
-            title: "Yapay Zeka & Diğer",
-            skills: ["OpenAI API", "Groq", "ElevenLabs", "Git / GitHub", "Docker"]
+            title: "AI & Developer Tools",
+            skills: ["OpenAI API", "Groq", "ElevenLabs", "Git", "GitHub", "Docker"]
         }
     ];
 
     return (
         <section id="skills" className="max-w-7xl mx-auto px-8 py-24 min-h-screen flex flex-col justify-center">
-            <div className="flex items-center gap-4 mb-12">
+            <div className="flex justify-center items-center gap-4 mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
-                    <span className="text-blue-500 font-mono text-2xl md:text-3xl mr-2">02.</span>
-                    Yetenekler
+                    Skills
                 </h2>
-                <div className="h-[1px] bg-slate-800 flex-grow"></div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

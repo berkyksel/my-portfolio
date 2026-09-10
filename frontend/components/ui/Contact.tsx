@@ -28,7 +28,6 @@ export default function Contact() {
     return (
         <section id="contact" className="max-w-4xl mx-auto px-8 py-24 min-h-screen flex flex-col justify-center text-center">
             <div className="space-y-4 mb-12">
-                <p className="text-blue-500 font-mono text-sm">05. Sırada Ne Var?</p>
                 <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">İletişime Geçin</h2>
                 <p className="text-slate-400 text-md max-w-lg mx-auto">
                     Yeni fırsatlara, işbirliklerine veya sadece tanışmak için atacağınız mesajlara her zaman açığım. Formu doldurarak bana doğrudan ulaşabilirsiniz!
