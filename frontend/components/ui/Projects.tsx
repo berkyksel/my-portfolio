@@ -11,7 +11,7 @@ export default function Projects() {
             title: "Winton Web Platformu",
             role: "Full Stack Developer",
             description: "Winton firması için tek başıma üstlendiğim, uçtan uca tüm mimarisini ve geliştirmesini tek başıma yaptığım modern web projesi.",
-            tech: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma"],
+            tech: ["Next.js", "TypeScript", "Tailwind CSS"],
             link: "#"
         },
         {

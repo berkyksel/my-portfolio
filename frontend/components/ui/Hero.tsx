@@ -32,10 +32,10 @@ export default function Hero() {
                     </Link>
 
                     <Link
-                        href="#contact"
+                        href="#iletisim"
                         className="text-slate-300 border-slate-700 hover:bg-slate-800 px-8 py-6 rounded-md text-md bg-transparent"
                     >
-                        Contact Me
+                        İletişime Geç
                     </Link>
                 </div>
 

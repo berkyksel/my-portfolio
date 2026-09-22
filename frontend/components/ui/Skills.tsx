@@ -6,7 +6,7 @@ export default function Skills() {
         },
         {
             title: "Backend & Databases",
-            skills: ["Node.js", "PostgreSQL", "Prisma ORM", "Python", "REST APIs"]
+            skills: ["Node.js", "PostgreSQL", "Python", "REST APIs"]
         },
         {
             title: "Mobile & Game Development",

@@ -21,18 +21,18 @@ const contactLinks = [
     },
 ];
 
-export default function Contact() {
+export default function Iletisim() {
     return (
         <section id="iletisim" className="max-w-5xl mx-auto px-8 py-24 min-h-screen flex flex-col justify-center">
-            <div className="flex justify-center items-center gap-4 mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
-                    Contact
+            <div className="max-w-2xl mb-12">
+                <p className="text-blue-500 font-mono text-sm mb-4">04 / Contact</p>
+                <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight mb-5">
+                    Let&apos;s build something together.
                 </h2>
+                <p className="text-slate-400 text-lg leading-relaxed">
+                    Whether you have a project in mind, want to collaborate, or simply want to say hello, you can reach me through any of the channels below.
+                </p>
             </div>
-
-            <p className="text-slate-400 text-lg leading-relaxed max-w-2xl mb-12">
-                Whether you have a project in mind, want to collaborate, or simply want to say hello, you can reach me through any of the channels below.
-            </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {contactLinks.map(({ label, value, href, icon: Icon }) => (

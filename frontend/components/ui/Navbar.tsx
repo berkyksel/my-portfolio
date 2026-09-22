@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import type { MouseEvent } from 'react';
+import { FileText } from 'lucide-react';
 
 function GithubIcon() {
     return (
@@ -25,7 +26,7 @@ export default function Navbar() {
         { name: 'Skills', href: '#skills' },
         { name: 'Projects', href: '#projects' },
         { name: 'Experience', href: '#experience' },
-        { name: 'Contact', href: '#contact' },
+        { name: 'Contact', href: '#iletisim' },
     ];
 
     function handleNavigation(event: MouseEvent<HTMLAnchorElement>, href: string) {
@@ -41,7 +42,7 @@ export default function Navbar() {
     }
 
     return (
-        <nav className="sticky top-0 z-50 w-full  bg-black/80 flex items-center justify-between py-6 px-8 max-w-7xl mx-auto">
+        <nav className="sticky top-0 z-50 w-full bg-black/80 flex items-center justify-between py-6 px-8">
             {/* Logo */}
             <Link href="/" className="text-2xl font-bold text-blue-500 tracking-tighter">
                 &lt;Dev/&gt;
@@ -61,16 +62,26 @@ export default function Navbar() {
                 ))}
             </div>
 
-            {/* GitHub Button */}
-            <a
-                href="https://github.com/berkyksel"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hidden md:inline-flex items-center gap-2 rounded-md bg-purple-500 px-6 py-2 text-white transition-colors hover:bg-purple-600"
-            >
-                <GithubIcon />
-                GitHub
-            </a>
+            <div className="hidden md:flex items-center gap-3">
+                <a
+                    href="https://github.com/berkyksel"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-md bg-purple-500 px-6 py-2 text-white transition-colors hover:bg-purple-600"
+                >
+                    <GithubIcon />
+                    GitHub
+                </a>
+                <a
+                    href="/BerkYüksel-CV.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-md bg-red-600 px-6 py-2 text-white transition-colors hover:bg-red-700"
+                >
+                    <FileText aria-hidden="true" size={16} />
+                    CV
+                </a>
+            </div>
 
             {/* Mobile Menu Button */}
             <button

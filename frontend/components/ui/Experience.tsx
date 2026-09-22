@@ -18,7 +18,7 @@ export default function Experience() {
             bullets: [
                 "Şirketin ihtiyaç duyduğu tüm web platformu altyapısı tek başına, uçtan uca tasarlanıp kodlandı.",
                 "Frontend tarafında Next.js, TypeScript ve Tailwind CSS ile modern ve duyarlı (responsive) arayüzler inşa edildi.",
-                "Backend veri yönetimi için PostgreSQL ve Prisma ORM entegrasyonu başarılı bir şekilde kuruldu."
+                "Backend veri yönetimi için PostgreSQL tabanlı veri yönetimi altyapısı kuruldu."
             ]
         }
     ];
