@@ -40,7 +40,7 @@ export default function Navbar() {
         if (href === '#home') {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         } else {
-            document.querySelector(href)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            document.querySelector(href)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
         window.history.replaceState(null, '', href);
     }
