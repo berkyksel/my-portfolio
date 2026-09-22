@@ -24,7 +24,7 @@ export default function Projects() {
     ];
 
     return (
-        <section id="projects" className="max-w-7xl mx-auto px-8 py-24 min-h-screen">
+        <section id="projects" className="max-w-7xl mx-auto px-8 py-24 min-h-screen flex flex-col justify-center">
             <div className="flex justify-center items-center gap-4 mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
                     Projects

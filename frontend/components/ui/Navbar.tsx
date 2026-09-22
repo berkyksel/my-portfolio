@@ -37,16 +37,20 @@ export default function Navbar() {
         }
 
         event.preventDefault();
-        document.querySelector(href)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (href === '#home') {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else {
+            document.querySelector(href)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
         window.history.replaceState(null, '', href);
     }
 
     return (
         <nav className="sticky top-0 z-50 w-full bg-black/80 flex items-center justify-between py-6 px-8">
             {/* Logo */}
-            <Link href="/" className="text-2xl font-bold text-blue-500 tracking-tighter">
-                &lt;Dev/&gt;
-            </Link>
+            <span className="text-2xl font-bold text-blue-500 tracking-tighter">
+                &lt;Berk Yüksel/&gt;
+            </span>
 
             {/* Navigation Links */}
             <div className="hidden md:flex items-center space-x-8 text-base font-medium text-slate-400">
@@ -67,19 +71,21 @@ export default function Navbar() {
                     href="https://github.com/berkyksel"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 rounded-md bg-purple-500 px-6 py-2 text-white transition-colors hover:bg-purple-600"
+                    aria-label="GitHub profilini aç"
+                    title="GitHub"
+                    className="inline-flex h-10 w-10 items-center justify-center rounded-md bg-purple-500 text-white transition-colors hover:bg-purple-600"
                 >
                     <GithubIcon />
-                    GitHub
                 </a>
                 <a
                     href="/BerkYüksel-CV.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 rounded-md bg-red-600 px-6 py-2 text-white transition-colors hover:bg-red-700"
+                    aria-label="CV dosyasını aç"
+                    title="CV"
+                    className="inline-flex h-10 w-10 items-center justify-center rounded-md bg-red-600 text-white transition-colors hover:bg-red-700"
                 >
                     <FileText aria-hidden="true" size={16} />
-                    CV
                 </a>
             </div>
 

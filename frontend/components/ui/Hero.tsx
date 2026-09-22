@@ -6,9 +6,6 @@ export default function Hero() {
 
             {/* Left Section */}
             <div className="flex-1 space-y-8">
-                <p className="text-blue-500 font-mono text-sm md:text-base">
-                    Hi, my name is Berk Yüksel
-                </p>
 
                 <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tight leading-tight">
                     <span className="text-purple-500">
@@ -35,7 +32,7 @@ export default function Hero() {
                         href="#iletisim"
                         className="text-slate-300 border-slate-700 hover:bg-slate-800 px-8 py-6 rounded-md text-md bg-transparent"
                     >
-                        İletişime Geç
+                        Contact Me
                     </Link>
                 </div>
 
