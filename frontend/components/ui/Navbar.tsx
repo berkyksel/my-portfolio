@@ -78,7 +78,7 @@ export default function Navbar() {
                     <GithubIcon />
                 </a>
                 <a
-                    href="/BerkYüksel-CV.pdf"
+                    href="/BerkYuksel-CV.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="CV dosyasını aç"
